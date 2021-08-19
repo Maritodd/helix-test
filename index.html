@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titles</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+<main>
+    <div class="update-container">
+        <p class="update-container__text">We've updated our policies. <a href="#" class="update-container__link">Learn
+            more</a></p>
+    </div>
+    <header class="header">
+        <img class="header-img" src="assets/logo.png" alt="logo"/>
+        <nav class="header-nav">
+            <a class="header-nav__link" href="#">Population Health</a>
+            <a class="header-nav__link" href="#">DNA Tests</a>
+            <a class="header-nav__link" href="#">Register Kit</a>
+            <a class="header-nav__link" href="#">Sign in</a>
+        </nav>
+        <a class="header-cart" href="#"><img src="assets/cart-icon.svg" alt="cart"/></a>
+    </header>
+    <section class="exome">
+        <p class="exome-title">Bringing the benefits of multiple assays into one</p>
+        <p class="exome-subtitle">Helix’s Exome+® assay has been carefully optimized to provide the benefits of lcWGS,
+            whole exome sequencing, microarrays, and targeted panels — all in one assay.</p>
+        <div class="menu" id="myTopnav">
+            <button class="tablink" onclick="openPage('Panels', this, '')" id="defaultOpen">Targeted Panels</button>
+            <button class="tablink" onclick="openPage('Exome', this, '')">Whole Exome Sequencing</button>
+            <button class="tablink" onclick="openPage('WGS', this, '')">TlcWGS and Microarrays</button>
+        </div>
+        <div id="Panels" class="tabcontent">
+            <span class="tabcontent-title">Targeted Panels</span>
+            <p class="tabcontent-text">Panels are often used in clinical settings because they’re low cost and provide
+                high quality coverage
+                of specific, pre-defined genomic regions of interest. While useful in certain settings, such assays are
+                limited
+                by their narrow focus.
+                <br/><br/>With ≥ 99.5% call rate across ~600 genes relevant
+                to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a single
+                sample.
+            </p>
+            <img class="tabcontent-img" src="assets/Oval.png" alt="oval1"/>
+        </div>
+        <div id="Exome" class="tabcontent">
+            <span class="tabcontent-title">Whole Exome Sequencing</span>
+            <p class="tabcontent-text">Panels are often used in clinical settings because they’re low cost and provide
+                high quality coverage
+                of specific, pre-defined genomic regions of interest. While useful in certain settings, such assays are
+                limited
+                by their narrow focus.
+                <br/><br/>With ≥ 99.5% call rate across ~600 genes relevant
+                to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a single
+                sample.
+            </p>
+            <img class="tabcontent-img" src="assets/Oval2.png" alt="oval1"/>
+        </div>
+        <div id="WGS" class="tabcontent">
+            <span class="tabcontent-title">lcWGS and Microarrays</span>
+            <p class="tabcontent-text">Panels are often used in clinical settings because they’re low cost and provide
+                high quality coverage
+                of specific, pre-defined genomic regions of interest. While useful in certain settings, such assays are
+                limited
+                by their narrow focus.
+                <br/><br/>With ≥ 99.5% call rate across ~600 genes relevant
+                to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a single
+                sample.
+            </p>
+            <img class="tabcontent-img" src="assets/Oval3.png" alt="oval1"/>
+        </div>
+    </section>
+    <section class="nofuture">
+        <p class="nofuture-title">A future proofed assay </p>
+        <p class="nofuture-subtitle">There are several advantages to running panels in the presence
+            of a whole exome,
+            including flexible test design, flexible re-testing, and increased functionality.</p>
+        <div class="nofuture-tabs">
+            <button class="nofuture-label">Flexible test design</button>
+            <div class="nofuture-content">
+                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
+                    comprehensive panel that can be expanded
+                    over time.
+                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                    while we have ensured the highest
+                    call rates across those genes that are most likely to belong to a panel,
+                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                <img class="nofuture-content__img" src="assets/1.png" alt="picture"/>
+            </div>
+            <button class="nofuture-label">Sequence once, query often</button>
+            <div class="nofuture-content">
+                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
+                    comprehensive panel that can be expanded
+                    over time.
+                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                    while we have ensured the highest
+                    call rates across those genes that are most likely to belong to a panel,
+                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                <img class="nofuture-content__img" src="assets/2.png" alt="picture"/>
+            </div>
+            <button class="nofuture-label">Comprehensive PGx</button>
+            <div class="nofuture-content">
+                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
+                    comprehensive panel that can be expanded
+                    over time.
+                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                    while we have ensured the highest
+                    call rates across those genes that are most likely to belong to a panel,
+                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                <img class="nofuture-content__img" src="assets/3.png" alt="picture"/>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+</main>
+<script>
+
+    ////////////////////////////////////////////////////////Menu script///////////////////////////////////////////////////////////////////
+
+    function openPage(pageName, elem, color) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "grid";
+        elem.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
+<script>
+    var acc = document.getElementsByClassName("nofuture-label");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+</html>
