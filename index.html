@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Titles</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="style.css">
+
 </head>
 <body class="body">
 <main>
@@ -11,14 +14,20 @@
         <p class="update-container__text">We've updated our policies. <a href="#" class="update-container__link">Learn
             more</a></p>
     </div>
-    <header class="header">
+    <header class="header" id="menuToggle">
         <img class="header-img" src="assets/logo.png" alt="logo"/>
-        <nav class="header-nav">
-            <a class="header-nav__link" href="#">Population Health</a>
-            <a class="header-nav__link" href="#">DNA Tests</a>
-            <a class="header-nav__link" href="#">Register Kit</a>
-            <a class="header-nav__link" href="#">Sign in</a>
-        </nav>
+        <div class="header-wrapper">
+            <input type="checkbox" class="header-input"/>
+            <span class="header-span"></span>
+            <span class="header-span"></span>
+            <span class="header-span"></span>
+            <nav class="header-nav">
+                <a class="header-nav__link" href="#">Population Health</a>
+                <a class="header-nav__link" href="#">DNA Tests</a>
+                <a class="header-nav__link" href="#">Register Kit</a>
+                <a class="header-nav__link" href="#">Sign in</a>
+            </nav>
+        </div>
         <a class="header-cart" href="#"><img src="assets/cart-icon.svg" alt="cart"/></a>
     </header>
     <section class="exome">
@@ -70,44 +79,53 @@
             <img class="tabcontent-img" src="assets/Oval3.png" alt="oval1"/>
         </div>
     </section>
-    <section class="nofuture">
-        <p class="nofuture-title">A future proofed assay </p>
-        <p class="nofuture-subtitle">There are several advantages to running panels in the presence
+    <section class="accordions">
+        <p class="accordions-title">A future proofed assay </p>
+        <p class="accordions-subtitle">There are several advantages to running panels in the presence
             of a whole exome,
             including flexible test design, flexible re-testing, and increased functionality.</p>
-        <div class="nofuture-tabs">
-            <button class="nofuture-label">Flexible test design</button>
-            <div class="nofuture-content">
-                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
-                    comprehensive panel that can be expanded
-                    over time.
-                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
-                    while we have ensured the highest
-                    call rates across those genes that are most likely to belong to a panel,
-                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
-                <img class="nofuture-content__img" src="assets/1.png" alt="picture"/>
+        <div class="accordion">
+            <div class="accordion-tab">
+                <input type="radio" name="radio-a" id="check1" checked>
+                <label class="accordion-tab__label" for="check1">Flexible test design</label>
+                <div class="accordion-tab__content">
+                    <p class="accordion-tab__content--text">The Exome+ assay provides the flexibility needed to build a
+                        comprehensive panel that can be expanded
+                        over time.
+                        With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                        while we have ensured the highest
+                        call rates across those genes that are most likely to belong to a panel,
+                        the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                    <img class="accordion-tab__content--img" src="assets/1.png" alt="picture"/>
+                </div>
             </div>
-            <button class="nofuture-label">Sequence once, query often</button>
-            <div class="nofuture-content">
-                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
-                    comprehensive panel that can be expanded
-                    over time.
-                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
-                    while we have ensured the highest
-                    call rates across those genes that are most likely to belong to a panel,
-                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
-                <img class="nofuture-content__img" src="assets/2.png" alt="picture"/>
+            <div class="accordion-tab">
+                <input type="radio" name="radio-a" id="check2">
+                <label class="accordion-tab__label" for="check2">Sequence once, query often</label>
+                <div class="accordion-tab__content">
+                    <p class="accordion-tab__content--text">The Exome+ assay provides the flexibility needed to build a
+                        comprehensive panel that can be expanded
+                        over time.
+                        With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                        while we have ensured the highest
+                        call rates across those genes that are most likely to belong to a panel,
+                        the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                    <img class="accordion-tab__content--img" src="assets/2.png" alt="picture"/>
+                </div>
             </div>
-            <button class="nofuture-label">Comprehensive PGx</button>
-            <div class="nofuture-content">
-                <p class="nofuture-content__text">The Exome+ assay provides the flexibility needed to build a
-                    comprehensive panel that can be expanded
-                    over time.
-                    With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
-                    while we have ensured the highest
-                    call rates across those genes that are most likely to belong to a panel,
-                    the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
-                <img class="nofuture-content__img" src="assets/3.png" alt="picture"/>
+            <div class="accordion-tab">
+                <input type="radio" name="radio-a" id="check3">
+                <label class="accordion-tab__label" for="check3">Comprehensive PGx</label>
+                <div class="accordion-tab__content">
+                    <p class="accordion-tab__content--text">The Exome+ assay provides the flexibility needed to build a
+                        comprehensive panel that can be expanded
+                        over time.
+                        With ~20,000 genes sequenced in each sample, every gene becomes a candidate for inclusion. And,
+                        while we have ensured the highest
+                        call rates across those genes that are most likely to belong to a panel,
+                        the Exome+ assay delivers high call rates for all genes beyond this core set.</p>
+                    <img class="accordion-tab__content--img" src="assets/3.png" alt="picture"/>
+                </div>
             </div>
         </div>
     </section>
@@ -134,22 +152,6 @@
     }
 
     document.getElementById("defaultOpen").click();
-</script>
-<script>
-    var acc = document.getElementsByClassName("nofuture-label");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
 </script>
 </body>
 </html>
